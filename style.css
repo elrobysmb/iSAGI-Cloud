@@ -1,0 +1,320 @@
+:root {
+    --primary-color: #1e88e5;
+    --secondary-color: #002F6D;
+    --accent-color: #696969;
+    --text-color: #212529;
+    --header-color: #4b4b4b;
+    --background-color: #FFFFFF;
+  }
+  
+  body {
+      font-family: 'Poppins', sans-serif; 
+      color: var(--text-color);
+      background-color: var(--background-color);
+  }
+  
+  .navbar-nav .nav-link {
+      font-weight: 600;
+      color: var(--text-color);
+      margin: 0 0.5rem;
+  }
+  
+  .navbar-nav .nav-link.active,
+  .navbar-nav .nav-link:hover {
+      color: var(--header-color);
+  }
+
+  .hero-section h1 {
+      color: var(--header-color);
+  }
+
+  .hero-section h2 {
+    color: var(--header-color);
+    font-size: 50px;
+}
+
+.hero-section h3 {
+    color: var(--primary-color);
+    font-size: 50px;
+}
+.hero-section h4 {
+    color: var(--header-color);
+    font-size: 20px;
+}
+.hero-section h5 {
+    color: var(--header-color);
+    font-size: 25px;
+}
+
+  .hero-section .lead {
+      color: var(--accent-color);
+      font-size: 1.25rem;
+  }
+  .tag-text h5 {
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+
+  .mission-banner {
+      background-color: var(--secondary-color);
+      padding: 4rem 0; 
+  }
+    
+  .footer-dark {
+      background-color: var(--secondary-color);
+  }
+  
+  .footer-dark a {
+      text-decoration: none;
+      transition: color 0.3s;
+  }
+  
+  .footer-dark a:hover {
+      color: #ddd;
+      text-decoration: underline;
+  }
+
+ /*Swiper Styles */
+
+  .marcas {
+    padding: 40px 0;
+    overflow: hidden;
+    background-color: white;
+    min-height: auto;
+  }
+  
+  .marcas-slider {
+    /* max-width: 700px; */
+    margin: 0 auto;
+    padding: 0 15px;
+    overflow: hidden;
+  }
+  
+  .marcas .swiper-wrapper {
+    display: flex; /* necesario */
+    align-items: center;
+  }
+  
+  .marcas .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    min-width: 120px;
+  }
+  
+  .marcas .swiper-slide img {
+    max-height: 50px;
+    width: auto;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+  }
+  
+  .marcas .swiper-slide img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.05);
+  }
+  
+  .text-gradient-flash {
+    background: linear-gradient(to right, var(--secondary), var(--primary));
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    animation: flashGradient 2.5s ease-in;
+  }
+  
+  @keyframes flashGradient {
+    to {
+      background-position: -200% center; /* MUEVE en 2000ms aprox */
+    }
+  }
+  .lead strong,
+  strong {
+    font-weight: bold;
+    font-size: inherit;
+  }
+  
+  .fw-xxl {
+    font-weight: bold;
+    opacity: 0.1;
+    transition: all 0.8s ease;
+    font-size: 12rem;
+    height: 12rem;
+    line-height: 12rem;
+  }
+  
+  .fw-xxlx:hover {
+    opacity: 1;
+    font-size: 3.5rem;
+  }
+  .rubro {
+    background: #f0f8ff4e;
+    padding: 5px 2px 5px 2px;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+  }
+  .rubro i {
+    color: #333;
+    margin-right: .5rem !important;
+    font-size: 1.5rem;
+  }
+  .rubro div {
+    margin-left: 1rem;
+    font-size: 1.0rem;
+    line-height: 1.1rem;
+    font-weight: bold;
+  }
+  .rubro div:nth-child(1)  {
+    margin-left: 5px;
+    font-size: 1.0rem;
+    font-weight: bold;
+    background-color: aliceblue;
+    padding: 5px 0 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .gradient-text {
+    /* background: linear-gradient(90deg, #0b57d0, #4285f4); */
+    background: linear-gradient(90deg, #1e88e5, #31bce8);
+    background-clip: text;              /* propiedad estándar */
+    -webkit-background-clip: text;      /* para compatibilidad con WebKit */
+    -webkit-text-fill-color: transparent;
+  }
+  .box {
+    background: linear-gradient(90deg, #fafafa, #f0f8ff4e);
+    background: #f0f4f9;
+    padding: 0;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+  }
+  .box .box-img-br{
+    position: relative;
+    padding: 0;
+  }
+  
+  span {
+    font-size: inherit;
+  }
+  
+  .min-vh-4 {
+    min-height: 60vh!important;
+  }
+  .min-vh-2 {
+    min-height: 30vh!important;
+  }
+  
+  .tag {
+    display: flex;
+  }
+  .tag-text  {
+    font-size: 1rem;
+    margin: 0 15px;
+    min-height: 7rem;
+  }
+  .tag-text h5 {
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+  .tag-text p {
+    font-size: 0.9em;
+    line-height: 1.5;
+  }
+  .tag-icon  {
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: #f0f4f9;
+    padding: 10px 0 5px 12px;
+    border-radius: 5px;
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+  .tag-icon i {
+    color: #616161 !important;
+  }
+  .input-group {
+    outline: 0;
+    box-shadow: none;
+  }
+  .input-group:focus {
+    outline: 0;
+    box-shadow: 0 0 0 .25rem rgba(13, 110, 253, .25);
+  }
+  .input-group .form-control {
+    border-right: none;
+  }
+  .input-group .form-control:focus {
+    border-right: none;
+    box-shadow:none;
+  }
+  
+  .input-group .btn {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .rubro {
+    background: #f0f8ff4e;
+    padding: 5px 2px 5px 2px;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+  }
+  .rubro i {
+    color: #333;
+    margin-right: .5rem !important;
+    font-size: 1.5rem;
+  }
+  .rubro div {
+    margin-left: 1rem;
+    font-size: 1.0rem;
+    line-height: 1.1rem;
+    font-weight: bold;
+  }
+  .rubro div:nth-child(1)  {
+    margin-left: 5px;
+    font-size: 1.0rem;
+    font-weight: bold;
+    background-color: aliceblue;
+    padding: 5px 0 5px 10px;
+    border-radius: 5px;
+  }
+  .comillas {
+    position: relative;
+    padding: 0.5em 1em;
+    font-size: inherit;
+  }
+  
+  .comillas::before,
+  .comillas::after {
+    content: "";
+    /* position: absolute; */
+    top: 0.25em;
+    color: var(--bs-primary);
+    font-weight: bold;
+    /* font: size 1.5em; */
+  }
+  
+  .comillas::before {
+    margin-left: -1em;
+    content: "“";
+  }
+  
+  .comillas::after {
+    margin-right: -1em;
+    content: "”";
+  }
+
+  .sticky {
+    position: sticky;
+    top: 0;
+}
